@@ -1,0 +1,32 @@
+{
+    "name": "mikha-dev/dcat-log-viewer",
+    "description": "log viewer",
+    "alias": "log viewer",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://github.com/jyil/log-viewer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jyiL",
+            "email": "sal597685816@live.cn"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "mikha-dev/dcat-admin": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dcat\\Admin\\LogViewer\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Dcat\\Admin\\LogViewer\\LogViewerServiceProvider",
+        "laravel": {
+            "providers": [
+                "Dcat\\Admin\\LogViewer\\LogViewerServiceProvider"
+            ]
+        }
+    }
+}
